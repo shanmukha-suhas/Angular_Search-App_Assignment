@@ -1,0 +1,12 @@
+<table>
+    <td>
+        <tr>
+            <input type="text" placeholder="search..." [(ngModel)] = "key" (keyup)="onCheckChanged()"   >
+        </tr>
+        <tr>
+            <input  type="checkbox" id="stock" [(ngModel)]="isChecked" [checked]="onCheckChanged()">
+            <label for="stock"> Only Show products in stock</label><br>
+        </tr>
+    </td>
+</table>
+

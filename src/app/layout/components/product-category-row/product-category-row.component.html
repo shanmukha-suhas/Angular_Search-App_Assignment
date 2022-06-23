@@ -1,0 +1,12 @@
+<label *ngFor ="let item of productSearchService.categorySet;">
+    <label style="margin-left: 5px;"><b>{{item}}</b></label>
+
+    <table  *ngFor="let product of productSearchService.filteredProducts">
+
+        <tr *ngIf="item == product.category">
+             <td>{{product.name}}</td>          
+            <td>{{product.price}}</td>
+        </tr>
+    </table>
+</label>
+
